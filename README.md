@@ -1,6 +1,6 @@
 # Brent Oil Price Change Point Analysis
 
-## 📋 Executive Summary
+##  Executive Summary
 
 This project analyzes how major geopolitical and economic events impact
 Brent crude oil prices using Bayesian change point detection. Structural
@@ -16,7 +16,7 @@ clustering and fat tails detected (kurtosis ≈ 65.9)
 
 ------------------------------------------------------------------------
 
-## 🎯 Business Objectives
+##  Business Objectives
 
 -   Identify regime shifts in oil price dynamics\
 -   Quantify the impact of major global events with uncertainty
@@ -30,7 +30,7 @@ risk analysts.
 
 ------------------------------------------------------------------------
 
-## 📊 Dataset Overview
+##  Dataset Overview
 
 ### Brent Oil Prices
 
@@ -46,7 +46,7 @@ risk analysts.
 
 ------------------------------------------------------------------------
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Installation
 
@@ -69,7 +69,7 @@ Feature dataset: `data/processed/prices_with_features.csv` - Figures:
 
 ------------------------------------------------------------------------
 
-## 📁 Project Structure
+##  Project Structure
 
     brent-oil-change-point-analysis/
     │
@@ -114,7 +114,7 @@ Feature dataset: `data/processed/prices_with_features.csv` - Figures:
 
 ------------------------------------------------------------------------
 
-## 📈 Key Findings (Task 1)
+##  Key Findings (Task 1)
 
 -   Log returns are stationary; price levels are non-stationary\
 -   High volatility clustering and regime shifts observed\
@@ -125,7 +125,7 @@ Feature dataset: `data/processed/prices_with_features.csv` - Figures:
 
 ------------------------------------------------------------------------
 
-## 🔬 Methodology
+##  Methodology
 
 ### Task 1: Data Foundation (Completed)
 
@@ -149,7 +149,7 @@ Feature dataset: `data/processed/prices_with_features.csv` - Figures:
 
 ------------------------------------------------------------------------
 
-## ⚠️ Assumptions and Limitations
+##  Assumptions and Limitations
 
 -   Correlation does not imply causation\
 -   Univariate analysis (no macroeconomic covariates)\
@@ -158,7 +158,7 @@ Feature dataset: `data/processed/prices_with_features.csv` - Figures:
 
 ------------------------------------------------------------------------
 
-## 📚 Documentation
+##  Documentation
 
 -   Task1 Analysis Plan: `docs/Task1_Analysis_Plan.md`
 -   Assumptions and Limitations: `docs/Assumptions_and_Limitations.md`
@@ -166,7 +166,7 @@ Feature dataset: `data/processed/prices_with_features.csv` - Figures:
 
 ------------------------------------------------------------------------
 
-## 🛠️ Dependencies
+##  Dependencies
 
 -   pandas, numpy, matplotlib, statsmodels, scipy\
 -   pymc (Task 2)\
@@ -174,7 +174,7 @@ Feature dataset: `data/processed/prices_with_features.csv` - Figures:
 
 ------------------------------------------------------------------------
 
-## 📅 Timeline
+##  Timeline
 
   Task     Status        Deliverables
   -------- ------------- ------------------------------------
