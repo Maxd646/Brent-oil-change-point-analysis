@@ -103,10 +103,7 @@ tmp/
 # reports/*.pdf
 # reports/*.docx
 
-# Keep figures for documentation
-!reports/figures/*.png
-!reports/figures/*.jpg
-!reports/figures/*.svg
+
 
 # =========================
 # Dashboard
