@@ -1,0 +1,16 @@
+date,event_name,description,category
+1990-08-02,Iraqi Invasion of Kuwait,Iraq invaded Kuwait leading to Gulf War and major oil supply disruption from the region,Geopolitical
+1997-11-01,Asian Financial Crisis,Economic crisis in East Asia causing reduced oil demand and price collapse,Economic
+2001-09-11,September 11 Attacks,Terrorist attacks on US leading to geopolitical instability and market uncertainty,Geopolitical
+2003-03-20,Iraq War Begins,US-led invasion of Iraq creating supply concerns and Middle East instability,Geopolitical
+2008-09-15,Global Financial Crisis,Lehman Brothers collapse triggering worldwide recession and demand destruction,Economic
+2008-12-17,OPEC Production Cut,OPEC announced record production cuts of 2.2 million barrels per day,OPEC
+2011-02-15,Arab Spring,Political uprisings across Middle East and North Africa disrupting oil production,Geopolitical
+2011-03-11,Fukushima Nuclear Disaster,Japan earthquake and nuclear crisis affecting energy markets and oil demand,Economic
+2014-11-27,OPEC Maintains Production,OPEC decided not to cut production despite oversupply leading to price crash,OPEC
+2016-11-30,OPEC Production Agreement,OPEC agreed to first production cut since 2008 to stabilize prices,OPEC
+2018-05-08,US Withdraws from Iran Deal,US reimposed sanctions on Iran affecting oil exports and supply,Geopolitical
+2020-03-06,OPEC+ Talks Collapse,Saudi Arabia and Russia failed to agree on production cuts amid COVID-19,OPEC
+2020-03-11,COVID-19 Pandemic Declaration,WHO declared COVID-19 pandemic causing unprecedented demand collapse,Economic
+2020-04-20,Negative Oil Prices,WTI crude futures turned negative for first time in history due to storage concerns,Economic
+2022-02-24,Russia-Ukraine War,Russian invasion of Ukraine causing major supply disruptions and sanctions,Geopolitical

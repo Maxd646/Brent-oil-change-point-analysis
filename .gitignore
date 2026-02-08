@@ -1,5 +1,5 @@
 # =========================
-# Python & Data Science
+# Python
 # =========================
 __pycache__/
 *.py[cod]
@@ -11,35 +11,23 @@ __pycache__/
 dist/
 build/
 .eggs/
+*.pyc
 
 # Virtual environments
 venv/
 env/
 .venv/
+ENV/
+env.bak/
+venv.bak/
 pip-wheel-metadata/
 
+# =========================
 # Jupyter Notebook
+# =========================
 .ipynb_checkpoints/
 *.nbconvert.ipynb
-
-# =========================
-# Data Files (IMPORTANT)
-# =========================
-data/raw/*
-data/processed/*
-data/external/*
-!data/raw/.gitkeep
-!data/processed/.gitkeep
-!data/external/.gitkeep
-
-# =========================
-# Logs & Outputs
-# =========================
-logs/
-*.log
-outputs/
-results/
-figures/
+*-checkpoint.ipynb
 
 # =========================
 # IDE & Editor Files
@@ -48,6 +36,9 @@ figures/
 .idea/
 *.sublime-project
 *.sublime-workspace
+*.swp
+*.swo
+*~
 
 # =========================
 # OS Files
@@ -55,45 +46,166 @@ figures/
 .DS_Store
 Thumbs.db
 desktop.ini
+*.bak
 
+# =========================
+# Data Files - KEEP ESSENTIAL DATA
+# =========================
+# Keep external data (raw datasets and events)
+# !data/external/
+
+# Keep processed data for reproducibility
+# !data/processed/
+
+# Ignore large temporary data files
+data/temp/
+data/cache/
+*.tmp
+
+# Ignore very large datasets (>100MB)
+data/**/*.parquet
+data/**/*.h5
+data/**/*.hdf5
+
+# =========================
+# Model Files
+# =========================
+# Ignore large model files
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+models/saved/
+models/checkpoints/
+
+# Keep model configs
+!models/*.json
+!models/*.yaml
+
+# =========================
+# Logs & Temporary Outputs
+# =========================
+logs/
+*.log
+*.log.*
+temp/
+tmp/
+
+# =========================
+# Reports - Keep documentation, ignore large PDFs
+# =========================
+# Keep markdown reports
+!reports/*.md
+!reports/*.txt
+
+# Ignore large generated PDFs (can be regenerated)
+# reports/*.pdf
+# reports/*.docx
+
+
+
+# =========================
+# Dashboard
 # =========================
 # React Frontend
-# =========================
 dashboard/frontend/node_modules/
 dashboard/frontend/build/
+dashboard/frontend/dist/
 dashboard/frontend/.env
+dashboard/frontend/.env.local
+dashboard/frontend/npm-debug.log*
+dashboard/frontend/yarn-debug.log*
+dashboard/frontend/yarn-error.log*
 
-# =========================
 # Flask Backend
-# =========================
 dashboard/backend/__pycache__/
 dashboard/backend/.env
+dashboard/backend/.env.local
 dashboard/backend/*.db
+dashboard/backend/*.sqlite
+dashboard/backend/instance/
 
 # =========================
 # Secrets & Environment Variables
 # =========================
 .env
 .env.*
+!.env.example
 secrets.json
-config.yaml
+secrets.yaml
+credentials.json
+*.key
+*.pem
+
+# Keep config templates
+!config.example.json
+!config.template.json
 
 # =========================
-# Reports (optional)
+# Testing
 # =========================
-reports/*.pdf
-reports/*.docx
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# =========================
+# Documentation Build
+# =========================
+docs/_build/
+docs/_static/
+docs/_templates/
+site/
 
 # =========================
 # Misc
 # =========================
-*.csv
-*.xlsx
-*.parquet
-*.pickle
-*.pkl
-*.h5
+*.swp
+*.swo
+*~
+.cache/
 
-# Keep template example files
-!*.example
-!*.template
+# Keep important project files
+!README.md
+!LICENSE
+!requirements.txt
+!config.json
+!.gitignore
+
+# Keep all markdown documentation
+!**/*.md
+
+# Keep all Python source code
+!**/*.py
+
+# Keep Jupyter notebooks
+!**/*.ipynb
+
+# Keep essential data files for the project
+!data/external/BrentOilPrices.csv
+!data/external/geopolitical_events.csv
+!data/processed/cleaned_prices.csv
+!data/processed/prices_with_features.csv
+
+# Keep configuration files
+!**/*.json
+!**/*.yaml
+!**/*.yml
+!**/*.toml
+
+# Keep all documentation
+!docs/**/*
+
+# Keep all source code
+!src/**/*
+
+# Keep all scripts
+!scripts/**/*
+
+# Keep all tests
+!tests/**/*
+
+# Keep notebooks
+!notebooks/**/*

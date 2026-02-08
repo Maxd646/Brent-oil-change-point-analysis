@@ -1,0 +1,38 @@
+{
+  "paths": {
+    "raw_data": "data/external/BrentOilPrices.csv",
+    "events_data": "data/external/geopolitical_events.csv",
+    "cleaned_data": "data/processed/cleaned_prices.csv",
+    "enhanced_data": "data/processed/prices_with_features.csv",
+    "figures_dir": "reports/figures",
+    "summary_report": "reports/eda_summary.txt"
+  },
+  "cleaning": {
+    "outlier_method": "iqr",
+    "outlier_threshold": 3.0,
+    "remove_duplicates": true,
+    "remove_invalid_prices": true
+  },
+  "features": {
+    "rolling_windows": {
+      "volatility_short": 30,
+      "volatility_long": 90,
+      "ma_short": 30,
+      "ma_long": 365
+    },
+    "min_periods_ratio": 0.5
+  },
+  "plotting": {
+    "dpi": 300,
+    "figsize_wide": [16, 6],
+    "figsize_tall": [16, 10],
+    "figsize_square": [14, 8],
+    "style": "default",
+    "font_size": 10
+  },
+  "analysis": {
+    "decomposition_period": 52,
+    "decomposition_model": "additive",
+    "stationarity_alpha": 0.05
+  }
+}
