@@ -1,0 +1,99 @@
+# =========================
+# Python & Data Science
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.venv/
+pip-wheel-metadata/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# =========================
+# Data Files (IMPORTANT)
+# =========================
+data/raw/*
+data/processed/*
+data/external/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/external/.gitkeep
+
+# =========================
+# Logs & Outputs
+# =========================
+logs/
+*.log
+outputs/
+results/
+figures/
+
+# =========================
+# IDE & Editor Files
+# =========================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# React Frontend
+# =========================
+dashboard/frontend/node_modules/
+dashboard/frontend/build/
+dashboard/frontend/.env
+
+# =========================
+# Flask Backend
+# =========================
+dashboard/backend/__pycache__/
+dashboard/backend/.env
+dashboard/backend/*.db
+
+# =========================
+# Secrets & Environment Variables
+# =========================
+.env
+.env.*
+secrets.json
+config.yaml
+
+# =========================
+# Reports (optional)
+# =========================
+reports/*.pdf
+reports/*.docx
+
+# =========================
+# Misc
+# =========================
+*.csv
+*.xlsx
+*.parquet
+*.pickle
+*.pkl
+*.h5
+
+# Keep template example files
+!*.example
+!*.template
