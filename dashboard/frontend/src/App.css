@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f5f7fa;
+}
+
+.App {
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+
+.App-header {
+    background: linear-gradient(135deg, #2E86AB 0%, #1a5276 100%);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.App-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.App-header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.5rem;
+    color: #2E86AB;
+}
+
+/* Summary Cards */
+.summary-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card .stat {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2E86AB;
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+    background: white;
+    margin: 0 2rem 2rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    align-items: flex-end;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.filter-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.filter-group input,
+.filter-group select {
+    padding: 0.6rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    min-width: 150px;
+}
+
+.refresh-btn {
+    padding: 0.6rem 1.5rem;
+    background: #2E86AB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.refresh-btn:hover {
+    background: #1a5276;
+}
+
+/* Charts */
+.chart-container {
+    background: white;
+    padding: 2rem;
+    margin: 0 2rem 2rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+/* Tooltips */
+.custom-tooltip,
+.event-tooltip {
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.custom-tooltip p,
+.event-tooltip p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}
+
+.event-tooltip {
+    max-width: 300px;
+}
+
+/* Events List */
+.events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.event-item {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    border-left: 4px solid #2E86AB;
+    background: #f9f9f9;
+    border-radius: 5px;
+    transition: background 0.2s;
+}
+
+.event-item:hover {
+    background: #f0f0f0;
+}
+
+.event-item.geopolitical {
+    border-left-color: #e74c3c;
+}
+
+.event-item.economic {
+    border-left-color: #f39c12;
+}
+
+.event-item.opec {
+    border-left-color: #27ae60;
+}
+
+.event-date {
+    font-weight: bold;
+    color: #666;
+    min-width: 100px;
+    font-size: 0.9rem;
+}
+
+.event-content h4 {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.event-category {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    background: #2E86AB;
+    color: white;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.event-content p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Change Points */
+.changepoints-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.changepoint-item {
+    padding: 1.5rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border: 2px solid #2E86AB;
+}
+
+.changepoint-item h4 {
+    color: #2E86AB;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.changepoint-item p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.changepoint-item strong {
+    color: #666;
+}
+
+/* Footer */
+.App-footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.App-footer p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .App-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .summary-cards {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        padding: 1rem;
+    }
+
+    .filters {
+        flex-direction: column;
+        margin: 0 1rem 1rem 1rem;
+    }
+
+    .chart-container {
+        margin: 0 1rem 1rem 1rem;
+        padding: 1rem;
+    }
+
+    .event-item {
+        flex-direction: column;
+    }
+}

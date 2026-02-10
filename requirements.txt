@@ -4,3 +4,12 @@ matplotlib>=3.7.0
 seaborn>=0.12.0
 scipy>=1.10.0
 statsmodels>=0.14.0
+
+# Bayesian modeling (Task 2)
+pymc>=5.10.0
+arviz>=0.17.0
+pytensor>=2.18.0
+
+# Dashboard backend (Task 3)
+flask>=3.0.0
+flask-cors>=4.0.0
